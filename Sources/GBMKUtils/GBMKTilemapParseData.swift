@@ -15,20 +15,20 @@ import SpriteKit
 /// A data structure that contains the data for a parsed tilemap.
 public struct GBMKTilemapParseData {
     /// The tile definition for this given tile.
-    var definition: SKTileDefinition
+    public var definition: SKTileDefinition
 
     /// The column coordinate of this tile.
-    var column: Int
+    public var column: Int
 
     /// The row coordinate of this tile.
-    var row: Int
+    public var row: Int
 
     /// The unit size of this tile.
-    var unit: CGSize
+    public var unit: CGSize
 
     /// The associated sprite node for this tile.
-    var sprite: SKSpriteNode
+    public var sprite: SKSpriteNode
 
     /// The texture of this tile.
-    var texture: SKTexture?
+    public var texture: SKTexture?
 }
