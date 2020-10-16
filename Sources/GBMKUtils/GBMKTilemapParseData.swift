@@ -13,7 +13,7 @@ import Foundation
 import SpriteKit
 
 /// A data structure that contains the data for a parsed tilemap.
-struct GBMKTilemapParseData {
+public struct GBMKTilemapParseData {
     /// The tile definition for this given tile.
     var definition: SKTileDefinition
 

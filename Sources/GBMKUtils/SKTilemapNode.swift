@@ -17,7 +17,7 @@ extension SKTileMapNode {
     /// Iterate through the tilemap and apply a function to each tile.
     /// - Note: This method will skip tiles with no definitions (empty tiles).
     /// - Parameter handler: The function that will be applied on every tile.
-    func parse(handler: ((GBMKTilemapParseData) -> Void)) {
+    public func parse(handler: ((GBMKTilemapParseData) -> Void)) {
         let mapUnit = self.tileSize
         let unit = mapUnit
         let mapHalfWidth = CGFloat(self.numberOfColumns) / (mapUnit.width * 2)

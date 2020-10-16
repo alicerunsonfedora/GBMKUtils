@@ -16,7 +16,7 @@ extension Int {
     /// - Parameter lower: The minimum value the integer must be.
     /// - Parameter upper: The maximum value the integer must be.
     /// - Returns: An integer that fits within the range specified.
-    func clamp(lower: Int, upper: Int) -> Int {
+    public func clamp(lower: Int, upper: Int) -> Int {
         switch self {
         case self where self < lower:
             return lower
@@ -30,7 +30,7 @@ extension Int {
     /// Returns a value within a specified range.
     /// - Parameter range: A range that the value must fall into.
     /// - Returns: An integer that fits within the range specified.
-    func clamp(in range: Range<Int>) -> Int {
+    public func clamp(in range: Range<Int>) -> Int {
         return self.clamp(lower: range.lowerBound, upper: range.upperBound)
     }
 }
@@ -40,7 +40,7 @@ extension Float {
     /// - Parameter lower: The minimum value the float must be.
     /// - Parameter upper: The maximum value the float must be.
     /// - Returns: A float that fits withing the range specified.
-    func clamp(lower: Float, upper: Float) -> Float {
+    public func clamp(lower: Float, upper: Float) -> Float {
         switch self {
         case self where self < lower:
             return lower
@@ -54,7 +54,7 @@ extension Float {
     /// Returns a value within a specified range.
     /// - Parameter range: A range that the value must fall into.
     /// - Returns: A float that fits within the range specified.
-    func clamp(in range: Range<Float>) -> Float {
+    public func clamp(in range: Range<Float>) -> Float {
         return self.clamp(lower: range.lowerBound, upper: range.upperBound)
     }
 }

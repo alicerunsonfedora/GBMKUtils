@@ -15,17 +15,17 @@ extension CGVector {
 
     /// Returns the magnituide of the vector.
     /// - Returns: The magnituide of the vector.
-    func magnitude() -> CGFloat {
+    public func magnitude() -> CGFloat {
         return sqrt(pow(self.dx, 2) + pow(self.dy, 2))
     }
 
     /// Determine if a vector is greater than another.
-    static func > (left: inout CGVector, right: CGVector) -> Bool {
+    public static func > (left: inout CGVector, right: CGVector) -> Bool {
         return left.magnitude() > right.magnitude()
     }
 
     /// Determine if a vector is less than another.
-    static func < (left: inout CGVector, right: CGVector) -> Bool {
+    public static func < (left: inout CGVector, right: CGVector) -> Bool {
         return left.magnitude() < right.magnitude()
     }
 

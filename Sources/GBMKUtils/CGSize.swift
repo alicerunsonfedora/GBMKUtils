@@ -15,7 +15,7 @@ extension CGSize {
 
     /// Initialize a CGSize with an equal height and width.
     /// - Parameter squareOf: The square's width/height.
-    init(squareOf: Float) {
+    public init(squareOf: Float) {
         self.init()
         self.width = CGFloat(squareOf)
         self.height = CGFloat(squareOf)
