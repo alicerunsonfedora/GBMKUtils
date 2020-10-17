@@ -18,6 +18,11 @@ public class Stack<T> {
         return self.stack.isEmpty
     }
 
+    /// The size of the stack.
+    public var size: Int {
+        return self.stack.count
+    }
+
     /// The top of the stack.
     public var top: T? {
         return self.stack.last

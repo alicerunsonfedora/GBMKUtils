@@ -18,21 +18,30 @@ public class Queue<T> {
         return self.queue.isEmpty
     }
 
+    /// The size of the queue.
+    public var size: Int {
+        return self.queue.count
+    }
+
+    /// The front of the queue.
+    public var front: T? {
+        return self.queue.first
+    }
+
+    /// The back of the queue.
+    public var back: T? {
+        return self.queue.last
+    }
+
     /// Enqueue an item into the queue.
     /// - Parameter item: The item to add to the queue.
     public func enqueue(_ item: T) {
-        self.queue.insert(item, at: 0)
+        self.queue.append(item)
     }
 
     /// Dequeue an item from the queue.
     /// - Returns: The dequeued item.
     public func dequeue() -> T {
-        self.queue.remove(at: 0)
-    }
-
-    /// Peek at the first item in the queue.
-    /// - Returns: The first item in the queue.
-    public func peek() -> T? {
-        return self.queue.first
+        return self.queue.remove(at: 0)
     }
 }
