@@ -28,6 +28,10 @@ public class Stack<T> {
         return self.stack.last
     }
 
+    public init() {
+
+    }
+
     /// Push an item on to the stack.
     /// - Parameter item: The item to push on the stack.
     public func push(_ item: T) {

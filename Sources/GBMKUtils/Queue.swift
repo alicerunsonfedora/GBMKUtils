@@ -33,6 +33,10 @@ public class Queue<T> {
         return self.queue.last
     }
 
+    public init() {
+
+    }
+
     /// Enqueue an item into the queue.
     /// - Parameter item: The item to add to the queue.
     public func enqueue(_ item: T) {
