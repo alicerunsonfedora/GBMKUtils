@@ -41,7 +41,7 @@ public class Queue<T> {
 
     /// Dequeue an item from the queue.
     /// - Returns: The dequeued item.
-    public func dequeue() -> T {
-        return self.queue.remove(at: 0)
+    public func dequeue() -> T? {
+        return self.queue.removeFirst()
     }
 }
